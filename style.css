@@ -530,6 +530,7 @@ body {
     display: flex;
     justify-content: flex-end;
     position: fixed;
+    z-index: 99999;
 }
 
 .boton_1{
@@ -542,6 +543,8 @@ body {
 }
 
 .boton_arriba{
+    z-index: 99999;
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: var(--amarillo);
@@ -690,4 +693,91 @@ body {
 
 .caja_pie .cont_input{
     background-color: white;
+}
+
+.fondomodal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+.contenidomodal {
+  max-width: 800px;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  overflow: auto;
+  height: 90vh;
+}
+
+
+
+
+form{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form a{
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: var(--rosa);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+}
+
+
+
+.alineacion_cerrar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mostrar {
+  display: flex;
+}
+.cerrarmodal {
+  cursor: pointer;
+  color: var(--azul);
+  font-size: 26px;
+  transition: all 0.5s;
+}
+.cerrarmodal:hover {
+  color: black;
+}
+
+
+
+.iconflecha{
+    font-size: 40px;
+    color: var(--cafe);
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    bottom: 20px;
 }

@@ -41,8 +41,34 @@ $("#abrirAcordeon4").click(function () {
 });
 
 Fancybox.bind("[data-fancybox]", {
-  // Your custom options
+    // Your custom options
 });
 
 //animaciones WOW
 new WOW().init();
+
+
+$("#boton_modal").click(function () {
+    $("#modal").addClass("mostrar");
+})
+
+$("#cerrar_modal").click(function () {
+    $("#modal").removeClass("mostrar");
+})
+
+
+
+
+// click por fuera
+window.onclick = function (event) {
+    if (event.target == modal) {
+        $("#modal").removeClass("mostrar");
+    }
+};
+
+// click tecla ESC
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        $("#modal").removeClass("mostrar");
+    }
+});
