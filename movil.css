@@ -1,0 +1,232 @@
+@media (max-width: 430px) {
+
+    :root {
+        --azul: #0b2c3d;
+        --amarillo: #febb04;
+        --rosa_bajo: #fff2f1;
+        --gris: #c1bebe;
+    }
+
+
+    .contenedor_cabecera {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .menu_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .menu_movil {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_movil i {
+        color: black;
+    }
+
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        width: 70%;
+        height: 113vh;
+        padding: 80px 30px;
+        left: -84%;
+        top: 0%;
+        position: absolute;
+        z-index: 9999;
+
+        transition: all 0.5s linear;
+
+    }
+
+
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu a:hover {
+        color: black;
+    }
+
+
+    .cont_cabecera {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--gris);
+    }
+
+    .cont_busqueda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        border: 1px solid var(--gris);
+        padding: 20px;
+    }
+
+    .cont_busqueda input {
+        border: none;
+    }
+
+    .cont_item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cont_item i {
+        color: var(--gris);
+    }
+
+    .menu.abrirmenu {
+        top: 0%;
+        left: 0%;
+    }
+
+
+
+    .flecha_abajo {
+        display: none;
+    }
+
+    .flecha_derecha {
+        display: block;
+    }
+
+    .lupa {
+        font-size: 35px;
+    }
+
+    .close {
+        display: block;
+        color: black;
+        font-size: 35px;
+        align-self: flex-end;
+    }
+
+    .menubarra {
+        display: block;
+        font-size: 45px;
+    }
+
+    .seccion_acordeon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .callbacks_nav {
+    left: 0%;
+    }
+
+    .contenedor_about {
+
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        /*border: 4px var(--cafe) solid;*/
+    }
+
+    .cuadro_cafe {
+        position: absolute;
+        z-index: 2;
+        top: -40px;
+        left: calc(100% - 135px);
+        width: 100px;
+        height: 100px;
+        background-color: var(--cafe);
+    }
+
+    .caption{
+        font-size: 20px;
+        top: 50%;
+    }
+
+    .caption2{
+        font-size: 20px;
+        top: 60%;
+    }
+
+    .caption3{
+        font-size: 16px;
+        top: 70%;
+    }
+
+    video{
+        max-width: 300px;
+    }
+
+    .contenedor_cards{
+    flex-direction: column;
+    gap: 30px;
+}
+.card{
+    margin: 10px;
+    gap: 80px;
+    padding: 50px 0px;
+    box-shadow: 0px 4px 14px -1px rgba(0, 0, 0, 0.1);
+}
+.caja_logo{
+    width: 150px;
+    height: 150px;
+}
+.caja_logo i{
+    font-size: 60px;
+}
+
+.seccion_galeria{
+    flex-direction: column-reverse;
+    text-align: left;
+}
+
+
+.caja_galeria{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+}
+.caja_galeria a{
+    width: 100%;
+}
+
+.contenedor_texto{
+    width: 80%;
+}
+.contenedor_texto{
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.fila_fotos_personas {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.seccion_contacto .fila{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+}
