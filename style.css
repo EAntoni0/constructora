@@ -9,6 +9,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #333;
+    position: relative;
 }
 
 :root{
@@ -528,6 +529,7 @@ body {
 .ctnbtn{
     display: flex;
     justify-content: flex-end;
+    position: fixed;
 }
 
 .boton_1{
@@ -540,7 +542,6 @@ body {
 }
 
 .boton_arriba{
-    position: static;
     width: 50px;
     height: 50px;
     background-color: var(--amarillo);
